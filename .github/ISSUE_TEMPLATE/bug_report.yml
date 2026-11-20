@@ -1,0 +1,90 @@
+name: Bug report
+description: Something MRCF did wrong, or a crash.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Did the robot move when it should not have?** For example, the safety layer, the interlock, the motion guard or the workspace bounds let a move through, or a stop did not stop the robot. Do not file that here. Report it privately, as [SECURITY.md](https://github.com/mitos-robotics/MRCF/blob/main/SECURITY.md) explains. Do the same for a security hole.
+  - type: checkboxes
+    id: not-private
+    attributes:
+      label: Not a private report
+      options:
+        - label: This is not about the robot moving when it should not have, and it is not a security hole.
+          required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to make it happen again
+      placeholder: |
+        1. python run.py
+        2. You: pick up the pawn on e2
+        3. ...
+    validations:
+      required: true
+  - type: input
+    id: command
+    attributes:
+      label: Command and deployment
+      description: What you ran, and which deployment it used (or your own script).
+      placeholder: python run.py, deployment chess
+    validations:
+      required: true
+  - type: input
+    id: backend
+    attributes:
+      label: Backend (robot)
+      description: "The value of `MRCF_ARM`: so101, ur5, _template, or the folder name of your own backend."
+      placeholder: so101
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where it ran
+      options:
+        - A real robot
+        - A vendor's simulator
+        - Offline (the tests, or the template's in-memory arm)
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: MRCF version or commit
+      description: "Run `pip show mrcf`, or `git rev-parse --short HEAD` in a clone."
+    validations:
+      required: true
+  - type: input
+    id: platform
+    attributes:
+      label: OS and Python
+      placeholder: macOS 26, Python 3.10
+    validations:
+      required: true
+  - type: textarea
+    id: output
+    attributes:
+      label: Relevant output
+      description: The console output around the problem, and any traceback.
+      render: text
+  - type: textarea
+    id: incident
+    attributes:
+      label: Flight recorder incident (optional)
+      description: |
+        If an action went wrong on a robot, the flight recorder may have written an incident. `python -m mrcf.flight_recorder --list` lists the incidents, and `python -m mrcf.flight_recorder <incident folder>` prints an incident's story. Paste the story here. The folder also holds camera frames. Attach a frame only after you have checked that it shows nothing private.
+      render: text

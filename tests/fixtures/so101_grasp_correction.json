@@ -1,0 +1,181 @@
+{
+ "measured": "2026-10-31 10:17",
+ "points": [
+  {
+   "lean_deg": 0.5,
+   "reach_m": 0.1382,
+   "along_m": -0.0,
+   "across_m": 0.0,
+   "span_m": [
+    -0.004,
+    0.004
+   ],
+   "note": "e2"
+  },
+  {
+   "lean_deg": -4.3,
+   "reach_m": 0.1398,
+   "along_m": 0.004,
+   "across_m": 0.0,
+   "span_m": [
+    -0.008,
+    0.0
+   ],
+   "note": "e2"
+  },
+  {
+   "lean_deg": -9.8,
+   "reach_m": 0.1344,
+   "along_m": 0.006,
+   "across_m": 0.0,
+   "span_m": [
+    -0.008,
+    -0.004
+   ],
+   "note": "e2"
+  },
+  {
+   "lean_deg": -14.4,
+   "reach_m": 0.1194,
+   "along_m": 0.002,
+   "across_m": 0.0,
+   "span_m": [
+    -0.004,
+    0.0
+   ],
+   "note": "e2"
+  },
+  {
+   "lean_deg": -19.7,
+   "reach_m": 0.117,
+   "along_m": 0.004,
+   "across_m": 0.0,
+   "span_m": [
+    -0.004,
+    -0.004
+   ],
+   "note": "e2"
+  },
+  {
+   "lean_deg": -4.6,
+   "reach_m": 0.2189,
+   "along_m": 0.004,
+   "across_m": 0.0,
+   "span_m": [
+    -0.008,
+    0.0
+   ],
+   "note": "e4"
+  },
+  {
+   "lean_deg": -9.5,
+   "reach_m": 0.2103,
+   "along_m": 0.006,
+   "across_m": 0.0,
+   "span_m": [
+    -0.008,
+    -0.004
+   ],
+   "note": "e4"
+  },
+  {
+   "lean_deg": -14.1,
+   "reach_m": 0.195,
+   "along_m": 0.002,
+   "across_m": 0.0,
+   "span_m": [
+    -0.008,
+    0.004
+   ],
+   "note": "e4"
+  },
+  {
+   "lean_deg": -19.0,
+   "reach_m": 0.1935,
+   "along_m": 0.004,
+   "across_m": 0.0,
+   "span_m": [
+    -0.008,
+    0.0
+   ],
+   "note": "e4"
+  },
+  {
+   "lean_deg": -24.3,
+   "reach_m": 0.1847,
+   "along_m": 0.002,
+   "across_m": 0.0,
+   "span_m": [
+    -0.004,
+    0.0
+   ],
+   "note": "e4"
+  },
+  {
+   "lean_deg": -29.0,
+   "reach_m": 0.1759,
+   "along_m": 0.002,
+   "across_m": 0.0,
+   "span_m": [
+    -0.004,
+    0.0
+   ],
+   "note": "e4"
+  },
+  {
+   "lean_deg": 0.1,
+   "reach_m": 0.1722,
+   "along_m": -0.0,
+   "across_m": 0.0,
+   "span_m": [
+    0.0,
+    0.0
+   ],
+   "note": "d3"
+  },
+  {
+   "lean_deg": -4.5,
+   "reach_m": 0.1711,
+   "along_m": 0.004,
+   "across_m": 0.0,
+   "span_m": [
+    -0.008,
+    0.0
+   ],
+   "note": "d3"
+  },
+  {
+   "lean_deg": -9.8,
+   "reach_m": 0.1651,
+   "along_m": 0.004,
+   "across_m": 0.0,
+   "span_m": [
+    -0.008,
+    0.0
+   ],
+   "note": "d3"
+  },
+  {
+   "lean_deg": -14.5,
+   "reach_m": 0.1569,
+   "along_m": 0.004,
+   "across_m": 0.0,
+   "span_m": [
+    -0.008,
+    0.0
+   ],
+   "note": "d3"
+  },
+  {
+   "lean_deg": -19.6,
+   "reach_m": 0.1484,
+   "along_m": 0.002,
+   "across_m": 0.0,
+   "span_m": [
+    -0.004,
+    0.0
+   ],
+   "note": "d3"
+  }
+ ]
+}

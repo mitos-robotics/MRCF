@@ -1,0 +1,2088 @@
+{
+ "block_faces_30deg": {
+  "approach_order": [
+   "top_down",
+   "near_base",
+   "reach_out"
+  ],
+  "cannot": [],
+  "fits": [
+   {
+    "approach": "top_down",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "near_base",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "reach_out",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   }
+  ],
+  "pick_check": {
+   "approach": "top_down",
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "would pick it by top_down, the jaws turned +120 deg",
+   "ok": true,
+   "refused": false
+  },
+  "pick_waypoints": [
+   [
+    "hover",
+    [
+     418.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ],
+   [
+    "grasp",
+    [
+     418.0,
+     0.0,
+     20.25
+    ],
+    8.0,
+    3.0
+   ],
+   [
+    "lift",
+    [
+     418.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "place_waypoints": [
+   [
+    "transit",
+    [
+     418.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ],
+   [
+    "release",
+    [
+     418.0,
+     0.0,
+     25.25
+    ],
+    5.0,
+    3.0
+   ],
+   [
+    "retreat",
+    [
+     418.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "plan_mm": {
+   "grasp_height_m": 20.25,
+   "grip_width_m": 30.0,
+   "height_m": 45.0,
+   "held_outline": null,
+   "hover_height_m": 63.0,
+   "lift_height_m": 70.25,
+   "pregrasp_open_m": 38.0,
+   "release_height_m": 25.25,
+   "width_m": 30.0
+  },
+  "room_check": {
+   "approach": null,
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "the jaws have 85 mm here, turned +0 deg",
+   "ok": true,
+   "refused": false
+  },
+  "room_mm": 85.0,
+  "room_unsettled": null,
+  "servo_ready": false,
+  "target_mm": [
+   418.0,
+   0.0,
+   0.0
+  ],
+  "turn_deg": 120.0,
+  "zone": "mid"
+ },
+ "far": {
+  "approach_order": [
+   "top_down",
+   "near_base",
+   "reach_out"
+  ],
+  "cannot": [],
+  "fits": [
+   {
+    "approach": "top_down",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "near_base",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "reach_out",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   }
+  ],
+  "pick_check": {
+   "approach": "top_down",
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "would pick it by top_down",
+   "ok": true,
+   "refused": false
+  },
+  "pick_waypoints": [
+   [
+    "hover",
+    [
+     544.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ],
+   [
+    "grasp",
+    [
+     544.0,
+     0.0,
+     20.25
+    ],
+    8.0,
+    3.0
+   ],
+   [
+    "lift",
+    [
+     544.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "place_waypoints": [
+   [
+    "transit",
+    [
+     544.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ],
+   [
+    "release",
+    [
+     544.0,
+     0.0,
+     25.25
+    ],
+    5.0,
+    3.0
+   ],
+   [
+    "retreat",
+    [
+     544.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "plan_mm": {
+   "grasp_height_m": 20.25,
+   "grip_width_m": 30.0,
+   "height_m": 45.0,
+   "held_outline": null,
+   "hover_height_m": 63.0,
+   "lift_height_m": 70.25,
+   "pregrasp_open_m": 38.0,
+   "release_height_m": 25.25,
+   "width_m": 30.0
+  },
+  "room_check": {
+   "approach": null,
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "the jaws have 85 mm here, turned +0 deg",
+   "ok": true,
+   "refused": false
+  },
+  "room_mm": 85.0,
+  "room_unsettled": null,
+  "servo_ready": false,
+  "target_mm": [
+   544.0,
+   0.0,
+   0.0
+  ],
+  "turn_deg": 0.0,
+  "zone": "mid"
+ },
+ "mid": {
+  "approach_order": [
+   "top_down",
+   "near_base",
+   "reach_out"
+  ],
+  "cannot": [],
+  "fits": [
+   {
+    "approach": "top_down",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "near_base",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "reach_out",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   }
+  ],
+  "pick_check": {
+   "approach": "top_down",
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "would pick it by top_down",
+   "ok": true,
+   "refused": false
+  },
+  "pick_waypoints": [
+   [
+    "hover",
+    [
+     418.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ],
+   [
+    "grasp",
+    [
+     418.0,
+     0.0,
+     20.25
+    ],
+    8.0,
+    3.0
+   ],
+   [
+    "lift",
+    [
+     418.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "place_waypoints": [
+   [
+    "transit",
+    [
+     418.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ],
+   [
+    "release",
+    [
+     418.0,
+     0.0,
+     25.25
+    ],
+    5.0,
+    3.0
+   ],
+   [
+    "retreat",
+    [
+     418.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "plan_mm": {
+   "grasp_height_m": 20.25,
+   "grip_width_m": 30.0,
+   "height_m": 45.0,
+   "held_outline": null,
+   "hover_height_m": 63.0,
+   "lift_height_m": 70.25,
+   "pregrasp_open_m": 38.0,
+   "release_height_m": 25.25,
+   "width_m": 30.0
+  },
+  "room_check": {
+   "approach": null,
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "the jaws have 85 mm here, turned +0 deg",
+   "ok": true,
+   "refused": false
+  },
+  "room_mm": 85.0,
+  "room_unsettled": null,
+  "servo_ready": false,
+  "target_mm": [
+   418.0,
+   0.0,
+   0.0
+  ],
+  "turn_deg": 0.0,
+  "zone": "mid"
+ },
+ "near_base": {
+  "approach_order": [
+   "top_down",
+   "near_base",
+   "reach_out"
+  ],
+  "cannot": [],
+  "fits": [
+   {
+    "approach": "top_down",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "near_base",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "reach_out",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   }
+  ],
+  "pick_check": {
+   "approach": "top_down",
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "would pick it by top_down",
+   "ok": true,
+   "refused": false
+  },
+  "pick_waypoints": [
+   [
+    "hover",
+    [
+     292.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ],
+   [
+    "grasp",
+    [
+     292.0,
+     0.0,
+     20.25
+    ],
+    8.0,
+    3.0
+   ],
+   [
+    "lift",
+    [
+     292.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "place_waypoints": [
+   [
+    "transit",
+    [
+     292.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ],
+   [
+    "release",
+    [
+     292.0,
+     0.0,
+     25.25
+    ],
+    5.0,
+    3.0
+   ],
+   [
+    "retreat",
+    [
+     292.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "plan_mm": {
+   "grasp_height_m": 20.25,
+   "grip_width_m": 30.0,
+   "height_m": 45.0,
+   "held_outline": null,
+   "hover_height_m": 63.0,
+   "lift_height_m": 70.25,
+   "pregrasp_open_m": 38.0,
+   "release_height_m": 25.25,
+   "width_m": 30.0
+  },
+  "room_check": {
+   "approach": null,
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "the jaws have 85 mm here, turned +0 deg",
+   "ok": true,
+   "refused": false
+  },
+  "room_mm": 85.0,
+  "room_unsettled": null,
+  "servo_ready": false,
+  "target_mm": [
+   292.0,
+   0.0,
+   0.0
+  ],
+  "turn_deg": 0.0,
+  "zone": "mid"
+ },
+ "neighbour_beside": {
+  "approach_order": [
+   "top_down",
+   "near_base",
+   "reach_out"
+  ],
+  "cannot": [],
+  "fits": [
+   {
+    "approach": "top_down",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "near_base",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "reach_out",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   }
+  ],
+  "pick_check": {
+   "approach": "top_down",
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "would pick it by top_down",
+   "ok": true,
+   "refused": false
+  },
+  "pick_waypoints": [
+   [
+    "hover",
+    [
+     418.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ],
+   [
+    "grasp",
+    [
+     418.0,
+     0.0,
+     20.25
+    ],
+    8.0,
+    3.0
+   ],
+   [
+    "lift",
+    [
+     418.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "place_waypoints": [
+   [
+    "transit",
+    [
+     418.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ],
+   [
+    "release",
+    [
+     418.0,
+     0.0,
+     25.25
+    ],
+    5.0,
+    3.0
+   ],
+   [
+    "retreat",
+    [
+     418.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "plan_mm": {
+   "grasp_height_m": 20.25,
+   "grip_width_m": 30.0,
+   "height_m": 45.0,
+   "held_outline": null,
+   "hover_height_m": 63.0,
+   "lift_height_m": 70.25,
+   "pregrasp_open_m": 38.0,
+   "release_height_m": 25.25,
+   "width_m": 30.0
+  },
+  "room_check": {
+   "approach": null,
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "the jaws have 85 mm here, turned +0 deg",
+   "ok": true,
+   "refused": false
+  },
+  "room_mm": 85.0,
+  "room_unsettled": null,
+  "servo_ready": false,
+  "target_mm": [
+   418.0,
+   0.0,
+   0.0
+  ],
+  "turn_deg": 0.0,
+  "zone": "mid"
+ },
+ "neighbour_toward_base": {
+  "approach_order": [
+   "top_down",
+   "near_base",
+   "reach_out"
+  ],
+  "pick_check": {
+   "approach": null,
+   "blocked_by": [
+    "toward base"
+   ],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "jaws need 38 mm open here but toward base leaves 20 mm",
+   "ok": false,
+   "refused": true
+  },
+  "plan_mm": {
+   "grasp_height_m": 20.25,
+   "grip_width_m": 30.0,
+   "height_m": 45.0,
+   "held_outline": null,
+   "hover_height_m": 63.0,
+   "lift_height_m": 70.25,
+   "pregrasp_open_m": 38.0,
+   "release_height_m": 25.25,
+   "width_m": 30.0
+  },
+  "room_check": {
+   "approach": null,
+   "blocked_by": [
+    "toward base"
+   ],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "jaws need 38 mm open here but toward base leaves 20 mm",
+   "ok": false,
+   "refused": true
+  },
+  "target_mm": [
+   418.0,
+   0.0,
+   0.0
+  ],
+  "zone": "mid"
+ },
+ "neighbours_all_round": {
+  "approach_order": [
+   "top_down",
+   "near_base",
+   "reach_out"
+  ],
+  "pick_check": {
+   "approach": null,
+   "blocked_by": [
+    "out",
+    "in"
+   ],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "jaws need 38 mm open here but out leaves 20 mm",
+   "ok": false,
+   "refused": true
+  },
+  "plan_mm": {
+   "grasp_height_m": 20.25,
+   "grip_width_m": 30.0,
+   "height_m": 45.0,
+   "held_outline": null,
+   "hover_height_m": 63.0,
+   "lift_height_m": 70.25,
+   "pregrasp_open_m": 38.0,
+   "release_height_m": 25.25,
+   "width_m": 30.0
+  },
+  "room_check": {
+   "approach": null,
+   "blocked_by": [
+    "out",
+    "in"
+   ],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "jaws need 38 mm open here but out leaves 20 mm",
+   "ok": false,
+   "refused": true
+  },
+  "target_mm": [
+   418.0,
+   0.0,
+   0.0
+  ],
+  "zone": "mid"
+ },
+ "nudge_toward_base": {
+  "nudge": {
+   "approach": "nudge",
+   "blocked_by": [],
+   "grasp_mm": null,
+   "message": "Pushing it 30 mm toward (+0.388, +0.000) with the jaws shut, 4 mm up it.",
+   "ok": true,
+   "refused": false
+  }
+ },
+ "on_a_block": {
+  "approach_order": [
+   "top_down",
+   "near_base",
+   "reach_out"
+  ],
+  "cannot": [],
+  "fits": [
+   {
+    "approach": "top_down",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "near_base",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "reach_out",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   }
+  ],
+  "pick_check": {
+   "approach": "top_down",
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "would pick it by top_down",
+   "ok": true,
+   "refused": false
+  },
+  "pick_waypoints": [
+   [
+    "hover",
+    [
+     418.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ],
+   [
+    "grasp",
+    [
+     418.0,
+     0.0,
+     20.25
+    ],
+    8.0,
+    3.0
+   ],
+   [
+    "lift",
+    [
+     418.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "place_waypoints": [
+   [
+    "transit",
+    [
+     418.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ],
+   [
+    "release",
+    [
+     418.0,
+     0.0,
+     25.25
+    ],
+    5.0,
+    3.0
+   ],
+   [
+    "retreat",
+    [
+     418.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "plan_mm": {
+   "grasp_height_m": 20.25,
+   "grip_width_m": 30.0,
+   "height_m": 45.0,
+   "held_outline": null,
+   "hover_height_m": 63.0,
+   "lift_height_m": 70.25,
+   "pregrasp_open_m": 38.0,
+   "release_height_m": 25.25,
+   "width_m": 30.0
+  },
+  "room_check": {
+   "approach": null,
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "the jaws have 85 mm here, turned +0 deg",
+   "ok": true,
+   "refused": false
+  },
+  "room_mm": 85.0,
+  "room_unsettled": null,
+  "servo_ready": false,
+  "target_mm": [
+   418.0,
+   0.0,
+   30.0
+  ],
+  "turn_deg": 0.0,
+  "zone": "mid"
+ },
+ "out_of_reach": {
+  "approach_order": [
+   "top_down",
+   "near_base",
+   "reach_out"
+  ],
+  "cannot": [],
+  "fits": [
+   {
+    "approach": "top_down",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "near_base",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "reach_out",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 30.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 25.25,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   }
+  ],
+  "pick_check": {
+   "approach": "top_down",
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "would pick it by top_down",
+   "ok": true,
+   "refused": false
+  },
+  "pick_waypoints": [
+   [
+    "hover",
+    [
+     880.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ],
+   [
+    "grasp",
+    [
+     880.0,
+     0.0,
+     20.25
+    ],
+    8.0,
+    3.0
+   ],
+   [
+    "lift",
+    [
+     880.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "place_waypoints": [
+   [
+    "transit",
+    [
+     880.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ],
+   [
+    "release",
+    [
+     880.0,
+     0.0,
+     25.25
+    ],
+    5.0,
+    3.0
+   ],
+   [
+    "retreat",
+    [
+     880.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "plan_mm": {
+   "grasp_height_m": 20.25,
+   "grip_width_m": 30.0,
+   "height_m": 45.0,
+   "held_outline": null,
+   "hover_height_m": 63.0,
+   "lift_height_m": 70.25,
+   "pregrasp_open_m": 38.0,
+   "release_height_m": 25.25,
+   "width_m": 30.0
+  },
+  "room_check": {
+   "approach": null,
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 30.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 25.25,
+    "width_m": 30.0
+   },
+   "message": "the jaws have 85 mm here, turned +0 deg",
+   "ok": true,
+   "refused": false
+  },
+  "room_mm": 85.0,
+  "room_unsettled": null,
+  "servo_ready": false,
+  "target_mm": [
+   880.0,
+   0.0,
+   0.0
+  ],
+  "turn_deg": 0.0,
+  "zone": "mid"
+ },
+ "tall": {
+  "approach_order": [
+   "top_down",
+   "near_base",
+   "reach_out"
+  ],
+  "cannot": [],
+  "fits": [
+   {
+    "approach": "top_down",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 100.0,
+    "plan_mm": {
+     "grasp_height_m": 50.0,
+     "grip_width_m": 30.0,
+     "height_m": 90.0,
+     "held_outline": null,
+     "hover_height_m": 108.0,
+     "lift_height_m": 100.0,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 55.0,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "near_base",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 100.0,
+    "plan_mm": {
+     "grasp_height_m": 50.0,
+     "grip_width_m": 30.0,
+     "height_m": 90.0,
+     "held_outline": null,
+     "hover_height_m": 108.0,
+     "lift_height_m": 100.0,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 55.0,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "reach_out",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 100.0,
+    "plan_mm": {
+     "grasp_height_m": 50.0,
+     "grip_width_m": 30.0,
+     "height_m": 90.0,
+     "held_outline": null,
+     "hover_height_m": 108.0,
+     "lift_height_m": 100.0,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 55.0,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   }
+  ],
+  "pick_check": {
+   "approach": "top_down",
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 50.0,
+    "grip_width_m": 30.0,
+    "height_m": 90.0,
+    "held_outline": null,
+    "hover_height_m": 108.0,
+    "lift_height_m": 100.0,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 55.0,
+    "width_m": 30.0
+   },
+   "message": "would pick it by top_down",
+   "ok": true,
+   "refused": false
+  },
+  "pick_waypoints": [
+   [
+    "hover",
+    [
+     418.0,
+     0.0,
+     108.0
+    ],
+    10.0,
+    null
+   ],
+   [
+    "grasp",
+    [
+     418.0,
+     0.0,
+     50.0
+    ],
+    8.0,
+    3.0
+   ],
+   [
+    "lift",
+    [
+     418.0,
+     0.0,
+     100.0
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "place_waypoints": [
+   [
+    "transit",
+    [
+     418.0,
+     0.0,
+     100.0
+    ],
+    10.0,
+    null
+   ],
+   [
+    "release",
+    [
+     418.0,
+     0.0,
+     55.0
+    ],
+    5.0,
+    3.0
+   ],
+   [
+    "retreat",
+    [
+     418.0,
+     0.0,
+     108.0
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "plan_mm": {
+   "grasp_height_m": 50.0,
+   "grip_width_m": 30.0,
+   "height_m": 90.0,
+   "held_outline": null,
+   "hover_height_m": 108.0,
+   "lift_height_m": 100.0,
+   "pregrasp_open_m": 38.0,
+   "release_height_m": 55.0,
+   "width_m": 30.0
+  },
+  "room_check": {
+   "approach": null,
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 50.0,
+    "grip_width_m": 30.0,
+    "height_m": 90.0,
+    "held_outline": null,
+    "hover_height_m": 108.0,
+    "lift_height_m": 100.0,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 55.0,
+    "width_m": 30.0
+   },
+   "message": "the jaws have 85 mm here, turned +0 deg",
+   "ok": true,
+   "refused": false
+  },
+  "room_mm": 85.0,
+  "room_unsettled": null,
+  "servo_ready": false,
+  "target_mm": [
+   418.0,
+   0.0,
+   0.0
+  ],
+  "turn_deg": 0.0,
+  "zone": "mid"
+ },
+ "too_wide": {
+  "approach_order": [
+   "top_down",
+   "near_base",
+   "reach_out"
+  ],
+  "cannot": [],
+  "fits": [
+   {
+    "approach": "top_down",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 95.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 85.0,
+     "release_height_m": 25.25,
+     "width_m": 95.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "near_base",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 95.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 85.0,
+     "release_height_m": 25.25,
+     "width_m": 95.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "reach_out",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 70.25,
+    "plan_mm": {
+     "grasp_height_m": 20.25,
+     "grip_width_m": 95.0,
+     "height_m": 45.0,
+     "held_outline": null,
+     "hover_height_m": 63.0,
+     "lift_height_m": 70.25,
+     "pregrasp_open_m": 85.0,
+     "release_height_m": 25.25,
+     "width_m": 95.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   }
+  ],
+  "pick_check": {
+   "approach": "top_down",
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 95.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 85.0,
+    "release_height_m": 25.25,
+    "width_m": 95.0
+   },
+   "message": "would pick it by top_down",
+   "ok": true,
+   "refused": false
+  },
+  "pick_waypoints": [
+   [
+    "hover",
+    [
+     418.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ],
+   [
+    "grasp",
+    [
+     418.0,
+     0.0,
+     20.25
+    ],
+    8.0,
+    3.0
+   ],
+   [
+    "lift",
+    [
+     418.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "place_waypoints": [
+   [
+    "transit",
+    [
+     418.0,
+     0.0,
+     70.25
+    ],
+    10.0,
+    null
+   ],
+   [
+    "release",
+    [
+     418.0,
+     0.0,
+     25.25
+    ],
+    5.0,
+    3.0
+   ],
+   [
+    "retreat",
+    [
+     418.0,
+     0.0,
+     63.0
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "plan_mm": {
+   "grasp_height_m": 20.25,
+   "grip_width_m": 95.0,
+   "height_m": 45.0,
+   "held_outline": null,
+   "hover_height_m": 63.0,
+   "lift_height_m": 70.25,
+   "pregrasp_open_m": 85.0,
+   "release_height_m": 25.25,
+   "width_m": 95.0
+  },
+  "room_check": {
+   "approach": null,
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 20.25,
+    "grip_width_m": 95.0,
+    "height_m": 45.0,
+    "held_outline": null,
+    "hover_height_m": 63.0,
+    "lift_height_m": 70.25,
+    "pregrasp_open_m": 85.0,
+    "release_height_m": 25.25,
+    "width_m": 95.0
+   },
+   "message": "the jaws have 85 mm here, turned +0 deg",
+   "ok": true,
+   "refused": false
+  },
+  "room_mm": 85.0,
+  "room_unsettled": null,
+  "servo_ready": false,
+  "target_mm": [
+   418.0,
+   0.0,
+   0.0
+  ],
+  "turn_deg": 0.0,
+  "zone": "mid"
+ },
+ "unmeasured": {
+  "approach_order": [
+   "top_down",
+   "near_base",
+   "reach_out"
+  ],
+  "cannot": [],
+  "fits": [
+   {
+    "approach": "top_down",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 100.0,
+    "plan_mm": {
+     "grasp_height_m": 50.0,
+     "grip_width_m": 30.0,
+     "height_m": 90.0,
+     "held_outline": null,
+     "hover_height_m": 108.0,
+     "lift_height_m": 100.0,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 55.0,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "near_base",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 100.0,
+    "plan_mm": {
+     "grasp_height_m": 50.0,
+     "grip_width_m": 30.0,
+     "height_m": 90.0,
+     "held_outline": null,
+     "hover_height_m": 108.0,
+     "lift_height_m": 100.0,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 55.0,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   },
+   {
+    "approach": "reach_out",
+    "checked": false,
+    "grasp_over_mm": null,
+    "lift_height_mm": 100.0,
+    "plan_mm": {
+     "grasp_height_m": 50.0,
+     "grip_width_m": 30.0,
+     "height_m": 90.0,
+     "held_outline": null,
+     "hover_height_m": 108.0,
+     "lift_height_m": 100.0,
+     "pregrasp_open_m": 38.0,
+     "release_height_m": 55.0,
+     "width_m": 30.0
+    },
+    "rot": null,
+    "servo": false,
+    "servo_skipped": false,
+    "tilt_deg": null
+   }
+  ],
+  "pick_check": {
+   "approach": "top_down",
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 50.0,
+    "grip_width_m": 30.0,
+    "height_m": 90.0,
+    "held_outline": null,
+    "hover_height_m": 108.0,
+    "lift_height_m": 100.0,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 55.0,
+    "width_m": 30.0
+   },
+   "message": "would pick it by top_down",
+   "ok": true,
+   "refused": false
+  },
+  "pick_waypoints": [
+   [
+    "hover",
+    [
+     418.0,
+     0.0,
+     108.0
+    ],
+    10.0,
+    null
+   ],
+   [
+    "grasp",
+    [
+     418.0,
+     0.0,
+     50.0
+    ],
+    8.0,
+    3.0
+   ],
+   [
+    "lift",
+    [
+     418.0,
+     0.0,
+     100.0
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "place_waypoints": [
+   [
+    "transit",
+    [
+     418.0,
+     0.0,
+     100.0
+    ],
+    10.0,
+    null
+   ],
+   [
+    "release",
+    [
+     418.0,
+     0.0,
+     55.0
+    ],
+    5.0,
+    3.0
+   ],
+   [
+    "retreat",
+    [
+     418.0,
+     0.0,
+     108.0
+    ],
+    10.0,
+    null
+   ]
+  ],
+  "plan_mm": {
+   "grasp_height_m": 50.0,
+   "grip_width_m": 30.0,
+   "height_m": 90.0,
+   "held_outline": null,
+   "hover_height_m": 108.0,
+   "lift_height_m": 100.0,
+   "pregrasp_open_m": 38.0,
+   "release_height_m": 55.0,
+   "width_m": 30.0
+  },
+  "room_check": {
+   "approach": null,
+   "blocked_by": [],
+   "grasp_mm": {
+    "grasp_height_m": 50.0,
+    "grip_width_m": 30.0,
+    "height_m": 90.0,
+    "held_outline": null,
+    "hover_height_m": 108.0,
+    "lift_height_m": 100.0,
+    "pregrasp_open_m": 38.0,
+    "release_height_m": 55.0,
+    "width_m": 30.0
+   },
+   "message": "the jaws have 85 mm here, turned +0 deg",
+   "ok": true,
+   "refused": false
+  },
+  "room_mm": 85.0,
+  "room_unsettled": null,
+  "servo_ready": false,
+  "target_mm": [
+   418.0,
+   0.0,
+   0.0
+  ],
+  "turn_deg": 0.0,
+  "zone": "mid"
+ },
+ "wrist_camera": {
+  "camera": null,
+  "located": false,
+  "sending": false,
+  "servo_ready_with_a_detector": false
+ }
+}

@@ -1,0 +1,572 @@
+{
+ "camera_kwargs": {
+  "capture_sizes": {
+   "front": [
+    640,
+    480
+   ],
+   "overhead": [
+    1280,
+    720
+   ]
+  },
+  "sources": {
+   "front": 1,
+   "overhead": 0
+  }
+ },
+ "missing_rig_settings": [],
+ "name": "SO-101",
+ "policies": "ParallelJaw",
+ "rig_kwargs": {
+  "arm_frame_scale": 1.0001,
+  "camera_name": "front",
+  "cameras": {
+   "front": {
+    "K": null,
+    "__type__": "Camera",
+    "dist": null,
+    "fps": 30,
+    "homography": null,
+    "model": null,
+    "mount": "gripper",
+    "plane_z_m": null,
+    "pose_on_gripper": null,
+    "size": [
+     640,
+     480
+    ],
+    "source": 1
+   },
+   "overhead": {
+    "K": null,
+    "__type__": "Camera",
+    "dist": null,
+    "fps": 30,
+    "homography": null,
+    "model": null,
+    "mount": "fixed",
+    "plane_z_m": null,
+    "pose_on_gripper": null,
+    "size": [
+     1280,
+     720
+    ],
+    "source": 0
+   }
+  },
+  "grasp_correction": {
+   "__type__": "GraspCorrection",
+   "measured": "",
+   "points": []
+  },
+  "gripper_cam_dist": [
+   0.08525,
+   -0.12433,
+   -0.00052,
+   -0.0013,
+   0.03745
+  ],
+  "gripper_cam_grasp_px": [
+   353.2,
+   259.7
+  ],
+  "gripper_cam_jacobian": [
+   [
+    0.000102013668,
+    -0.000316699405
+   ],
+   [
+    0.00031707549,
+    0.00012323292
+   ]
+  ],
+  "gripper_cam_k": [
+   [
+    343.09,
+    0.0,
+    341.3
+   ],
+   [
+    0.0,
+    342.23,
+    263.1
+   ],
+   [
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "gripper_cam_plane_z_m": 0.0142,
+  "gripper_cam_pose": [
+   [
+    -0.323671,
+    0.77706,
+    0.539828,
+    -0.058912
+   ],
+   [
+    -0.945968,
+    -0.253995,
+    -0.201571,
+    0.017139
+   ],
+   [
+    -0.019519,
+    -0.575903,
+    0.817285,
+    -0.044197
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "gripper_cam_position_m": [
+   -0.076,
+   0.033,
+   -0.053
+  ],
+  "gripper_cam_ref_height_m": 0.0709,
+  "gripper_cam_ref_point_height_m": 0.016,
+  "gripper_cam_ref_tilt_deg": -5.1,
+  "gripper_cam_scan_shift_m": [
+   -0.0087,
+   -0.0132,
+   -0.0025
+  ],
+  "gripper_max_open_m": 0.045,
+  "gripper_tag_id": 12,
+  "gripper_tag_pose": [
+   [
+    0.255452,
+    0.809341,
+    -0.528878,
+    -0.069847
+   ],
+   [
+    0.964624,
+    -0.176489,
+    0.195839,
+    0.014439
+   ],
+   [
+    0.065159,
+    -0.560196,
+    -0.825794,
+    -0.0526
+   ],
+   [
+    0.0,
+    0.0,
+    0.0,
+    1.0
+   ]
+  ],
+  "gripper_tag_size_m": 0.02322,
+  "jaw_centre_slide": 0.5,
+  "jaw_slide_axis": [
+   0.0,
+   -1.0,
+   0.0
+  ],
+  "motion_guard_cameras": [
+   "overhead"
+  ],
+  "motion_guard_zone": [
+   [
+    -0.06,
+    -0.31
+   ],
+   [
+    0.54,
+    -0.31
+   ],
+   [
+    0.54,
+    0.31
+   ],
+   [
+    -0.06,
+    0.31
+   ]
+  ],
+  "overhead_cam_model": {
+   "D": [
+    -0.3449,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "K": [
+    [
+     858.78,
+     0.0,
+     640.0
+    ],
+    [
+     0.0,
+     858.78,
+     360.0
+    ],
+    [
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "T_world_cam": [
+    [
+     -0.144315,
+     0.971165,
+     -0.189765,
+     0.353706
+    ],
+    [
+     0.989518,
+     0.140613,
+     -0.032907,
+     0.006002
+    ],
+    [
+     -0.005275,
+     -0.192525,
+     -0.981278,
+     0.534828
+    ],
+    [
+     0.0,
+     0.0,
+     0.0,
+     1.0
+    ]
+   ],
+   "size": [
+    1280,
+    720
+   ]
+  },
+  "overhead_camera_name": "overhead",
+  "overhead_homography": [
+   [
+    -0.000219958399,
+    0.00111671804,
+    0.0713925985
+   ],
+   [
+    0.00131496375,
+    0.000143823391,
+    -0.467593577
+   ],
+   [
+    -0.000106254141,
+    0.00039650754,
+    1.0
+   ]
+  ],
+  "render_h": 480,
+  "render_w": 640,
+  "sensors": {},
+  "tcp_offset": [
+   0.00035,
+   -0.002,
+   0.0
+  ],
+  "unchecked_facts": [],
+  "work_plane_z": 0.0167
+ },
+ "spec": {
+  "__type__": "GripperSpec",
+  "aim_at_measured_foot": true,
+  "anvil_margin_m": 0.004,
+  "approach_look": false,
+  "approach_look_above_top_m": 0.02,
+  "approach_look_shift_m": 0.006,
+  "approach_tol_m": 0.015,
+  "approaches": [
+   {
+    "__type__": "Approach",
+    "align": [
+     "wrist_camera_foot",
+     "overhead_first",
+     "wrist_servo",
+     "fixed_camera",
+     "kinematics"
+    ],
+    "keep_top_clear": false,
+    "lean_margin_deg": null,
+    "lift": "full",
+    "name": "top_down",
+    "own_hover": false,
+    "reach_margin": "out",
+    "servo": true,
+    "servo_max_lean_change_deg": null,
+    "zones": [
+     "near",
+     "mid"
+    ]
+   },
+   {
+    "__type__": "Approach",
+    "align": [
+     "wrist_camera_foot",
+     "overhead_first",
+     "wrist_servo",
+     "fixed_camera",
+     "kinematics"
+    ],
+    "keep_top_clear": false,
+    "lean_margin_deg": null,
+    "lift": "highest",
+    "name": "near_base",
+    "own_hover": true,
+    "reach_margin": "in",
+    "servo": false,
+    "servo_max_lean_change_deg": null,
+    "zones": [
+     "near"
+    ]
+   },
+   {
+    "__type__": "Approach",
+    "align": [
+     "wrist_camera_foot",
+     "overhead_first",
+     "wrist_servo",
+     "fixed_camera",
+     "kinematics"
+    ],
+    "keep_top_clear": true,
+    "lean_margin_deg": 3.0,
+    "lift": "highest",
+    "name": "reach_out",
+    "own_hover": false,
+    "reach_margin": "out",
+    "servo": true,
+    "servo_max_lean_change_deg": 10.0,
+    "zones": [
+     "far"
+    ]
+   }
+  ],
+  "back_off_to_attempt_hover": false,
+  "base_keep_out_m": 0.06,
+  "blind_retry_after_miss": false,
+  "camera": "front",
+  "camera_body_m": [
+   -0.075,
+   0.0,
+   0.02
+  ],
+  "camera_clearance_m": 0.01,
+  "close_across_long": false,
+  "close_step_pct": 1.5,
+  "container_cross_extra_m": 0.0,
+  "container_descent_retry": true,
+  "container_floor_m": 0.01,
+  "container_gripper_inside_m": null,
+  "container_lean_above_walls": false,
+  "container_look_band_px": 40,
+  "container_look_baseline_m": 0.04,
+  "container_look_reach_m": 0.08,
+  "container_look_settle_s": 0.4,
+  "container_max_drop_lean_deg": null,
+  "container_max_lean_deg": null,
+  "container_outline_clearance_m": 0.01,
+  "container_rim_margin_m": 0.01,
+  "container_rim_min_m": 0.02,
+  "container_spot_step_m": 0.02,
+  "container_spots_max": 8,
+  "container_wall_clearance_m": 0.02,
+  "default_max_height_m": 0.08,
+  "descend_on_overhead": true,
+  "descend_unconfirmed": true,
+  "descent_lean_retries": 2,
+  "descent_lean_step_deg": 10.0,
+  "descent_turn_first": false,
+  "far_from_lean_deg": null,
+  "far_measure_agree_mm": 15.0,
+  "far_reach_m": 0.29,
+  "fast_descent_above_top_m": null,
+  "finger_half_width_m": 0.008,
+  "finger_thickness_m": 0.009,
+  "free_depth_m": 0.055,
+  "grasp_flat_mm": 2.5,
+  "grasp_height_fraction": 0.6,
+  "grasp_reseat_along_m": null,
+  "grasp_reseat_lift_m": 0.015,
+  "grasp_reseats": 2,
+  "grasp_settle_along_m": 0.0015,
+  "grasp_settle_max_m": 0.008,
+  "grasp_settle_tol_m": 0.003,
+  "grasp_step_deg": 3.0,
+  "grasp_tol_m": 0.004,
+  "grip_low_from_above": false,
+  "grip_low_when_capped": false,
+  "grip_over_top_m": 0.01,
+  "handle_bite_m": 0.004,
+  "handle_first": false,
+  "handle_from_join_m": 0.01,
+  "handle_max_m": 0.04,
+  "handle_min_len_m": 0.025,
+  "handle_min_m": 0.008,
+  "handle_open_m": 0.012,
+  "handle_step_m": 0.008,
+  "height_from_views": false,
+  "height_looks_agree": 2,
+  "height_looks_max": 4,
+  "height_view_clearance_m": 0.04,
+  "held_by_camera": false,
+  "held_closed_m": null,
+  "held_open_m": 0.003,
+  "held_still_m": 0.0004,
+  "held_turns": false,
+  "held_while_still": false,
+  "hover_height_m": 0.06,
+  "jaw_axis": "tangential",
+  "jaw_slack_m": 0.004,
+  "jaw_turns_deg": [
+   15.0,
+   -15.0,
+   30.0,
+   -30.0,
+   45.0,
+   -45.0,
+   60.0,
+   -60.0,
+   75.0,
+   -75.0,
+   90.0,
+   -90.0
+  ],
+  "jaw_view_height_m": 0.12,
+  "jaw_view_openings_m": [
+   0.0,
+   0.01,
+   0.02,
+   0.03,
+   0.045,
+   0.06,
+   0.08,
+   0.1
+  ],
+  "jaw_view_spots_min": 3,
+  "lean_clears_floor": false,
+  "lean_clears_floor_from_deg": 10.0,
+  "lean_floor_clear_full_deg": 30.0,
+  "lean_floor_clear_m": 0.004,
+  "lean_floor_clear_min_m": 0.004,
+  "lift_clearance_m": 0.05,
+  "lift_height_m": 0.07,
+  "long_margin_m": 0.01,
+  "long_ratio": 1.5,
+  "look_around_max": 6,
+  "look_aside_m": 0.04,
+  "lying_join_min_m": 0.015,
+  "lying_min_aspect": 2.0,
+  "lying_pick": false,
+  "lying_side_clear_m": 0.005,
+  "lying_test_lift_m": 0.02,
+  "max_aim_shift_m": 0.02,
+  "max_open_m": 0.045,
+  "max_servo_shift_m": 0.035,
+  "measure_agree_foot_mm": 3.0,
+  "measure_agree_mm": 6.0,
+  "measure_at_hover": true,
+  "measure_foot_ratio": [
+   0.6,
+   1.7
+  ],
+  "min_grasp_height_m": 0.016,
+  "min_hold_width_m": 0.0034,
+  "miss_steps_along_m": [
+   0.005,
+   0.01
+  ],
+  "miss_width_m": 0.03,
+  "near_base_m": 0.15,
+  "neighbour_clearance_m": 0.003,
+  "open_wide_when_low": false,
+  "other_object_near_m": null,
+  "overhead_correct": true,
+  "overhead_first": false,
+  "overhead_max_iters": 3,
+  "overhead_max_step_m": 0.03,
+  "overhead_max_total_m": 0.05,
+  "overhead_tol_m": 0.003,
+  "place_in": false,
+  "place_in_over_contents": false,
+  "push_back_off_m": 0.003,
+  "push_body_margin_m": 0.006,
+  "push_gap_m": 0.006,
+  "push_max_contact_share": 0.5,
+  "push_max_m": 0.04,
+  "push_short_tol_m": 0.004,
+  "push_step_deg": 1.5,
+  "push_step_m": 0.003,
+  "push_tip_clearance_m": 0.004,
+  "release_clearance_m": 0.005,
+  "release_tol_m": 0.005,
+  "relook_after_miss": false,
+  "remeasure_known": true,
+  "render_h": 480,
+  "render_w": 640,
+  "retries": 3,
+  "rim_grip_depth_m": 0.012,
+  "rim_hollow_m": 0.03,
+  "rim_jaw_gap_m": 0.012,
+  "rim_max_misalign_deg": 25.0,
+  "rim_min_bite_m": 0.004,
+  "rim_min_hold_m": 0.0008,
+  "rim_pick": false,
+  "rim_swing_share": 0.0,
+  "rim_tries": 8,
+  "same_height_tol_m": 0.012,
+  "servo": true,
+  "servo_agree_m": 0.008,
+  "servo_height_m": 0.0709,
+  "servo_open_m": 0.035,
+  "servo_point_height_fraction": 0.4,
+  "servo_reach_margin_m": 0.015,
+  "servo_tilt_deg": -5.1,
+  "servo_tol_px": 8.0,
+  "slimmest_above_foot": 0.5,
+  "slip_m": 0.004,
+  "stand_up_attempts": 3,
+  "stand_up_grip_tol_m": 0.0015,
+  "stand_up_margin_m": 0.006,
+  "stand_up_min_knob_m": 0.006,
+  "stand_up_overshoot_m": 0.006,
+  "stand_up_relook_shift_m": 0.025,
+  "stand_up_step_deg": 2.0,
+  "stand_up_step_m": 0.003,
+  "stand_up_tip_clearance_m": 0.001,
+  "stand_up_turn_slack_deg": 15.0,
+  "step_after_sideways_push": false,
+  "stopped_short_holds": false,
+  "stopped_short_m": 0.004,
+  "sweep_free_width_m": 0.026,
+  "sweep_half_width_m": 0.025,
+  "sweep_margin_m": 0.003,
+  "table_z": 0.0167,
+  "tip_below_grasp_m": 0.007,
+  "top_clearance_m": 0.008,
+  "touch_step_m": 0.002,
+  "touch_surface": false,
+  "touchdown_m": 0.015,
+  "transit_over_walls": false,
+  "transit_settle": true,
+  "travel_tol_m": 0.01,
+  "trust_shape_after": 2,
+  "unknown_open_m": 0.038,
+  "unmeasured_obstacle_radius_m": 0.016,
+  "unmoved_m": 0.004,
+  "wrist_at_grasp": false,
+  "wrist_at_grasp_max_m": 0.02,
+  "wrist_at_grasp_tol_m": 0.0025
+ }
+}

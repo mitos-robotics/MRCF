@@ -1,0 +1,49 @@
+# The SO-101's own tests, with LeRobot and placo (CPU torch): its driver as
+# LeRobot builds it, its IK on its URDF, a real (untrained) ACT checkpoint run
+# through LearnedPolicy — the tests tests.yml skips. Without this they ran
+# only on the rig's own machine.
+#
+# On every push and pull request: a change made for another arm reaches the
+# SO-101 through the shared code (the policies, RigEnv, wiring, safety,
+# perception, the controller), and its recorded env and plans
+# (tests/baselines/so101/, tests/test_arm_baselines.py) are only checked here,
+# where its IK runs. MRCF_BASELINES_REQUIRE makes a skip of them a failure.
+# Weekly too, so a LeRobot, placo or torch release inside pyproject.toml's
+# pins that breaks the SO-101 shows up before the rig meets it; and by hand
+# (Actions -> so101 -> Run workflow).
+#
+# Python 3.10: the SO-101 rig's LeRobot env runs it.
+
+name: so101
+
+on:
+  schedule:
+    - cron: "0 5 * * 1"            # Mondays, 05:00 UTC
+  workflow_dispatch:
+  push:
+  pull_request:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  so101:
+    runs-on: ubuntu-26.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.10"
+          cache: pip
+      - name: OpenCV's system libraries
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libgl1 libglib2.0-0t64
+      - name: CPU torch, inside LeRobot's own pins (it would otherwise pull the CUDA build)
+        run: pip install "torch>=2.2.1,<2.11" "torchvision>=0.21,<0.26" --index-url https://download.pytorch.org/whl/cpu
+      - run: pip install -e ".[dev,so101]"
+      - name: The SO-101's URDF (a download; nothing connects)
+        run: python tools/so101/fetch_urdf.py
+      - run: pip list
+      - run: pytest -q -rs
+        env:
+          MRCF_BASELINES_REQUIRE: so101,ur5,_template

@@ -1,0 +1,54 @@
+name: Support a new robot
+description: "A robot you want MRCF to drive: an arm, a humanoid, a mobile base, a car or any other embodiment."
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Each robot is a backend in `mrcf/backends/<robot>/`. Outside that folder, only the deployments made for the robot name it (`ARM_NAME`). To write a backend, run `python tools/new_arm.py <robot>`, which makes a copy of [`mrcf/backends/_template/`](https://github.com/mitos-robotics/MRCF/tree/main/mrcf/backends/_template). Then follow [DEPLOYMENT_SPEC.md, "Adding an arm"](https://github.com/mitos-robotics/MRCF/blob/main/DEPLOYMENT_SPEC.md#adding-an-arm). That section is written for an arm with a gripper and cameras, because that is the case worked through so far. Any other robot implements the `RobotEnv` interface (see [CONTRIBUTING.md, "Adding a new arm"](https://github.com/mitos-robotics/MRCF/blob/main/CONTRIBUTING.md#adding-a-new-arm)).
+  - type: input
+    id: robot
+    attributes:
+      label: The robot
+      description: Make and model, with a link.
+    validations:
+      required: true
+  - type: dropdown
+    id: embodiment
+    attributes:
+      label: What kind of robot
+      options:
+        - An arm
+        - A mobile manipulator
+        - A humanoid
+        - A mobile base or a vehicle
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: sdk
+    attributes:
+      label: How it is driven
+      description: Its SDK or protocol, the programming language, how it connects (USB, Ethernet, ROS, ...), and whether a simulator exists for it.
+    validations:
+      required: true
+  - type: input
+    id: end-effector
+    attributes:
+      label: Gripper or end-effector
+      description: A parallel-jaw gripper, a hand, a suction cup, a tool, or none.
+  - type: textarea
+    id: sensors
+    attributes:
+      label: Cameras and sensors
+      description: What it has or what you would add, and where each one is mounted (for example, on the robot or fixed over the work area).
+  - type: dropdown
+    id: who-writes-it
+    attributes:
+      label: Will you write the backend?
+      options:
+        - "Yes"
+        - Yes, with some help
+        - No, I am asking for it
+    validations:
+      required: true

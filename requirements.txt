@@ -1,0 +1,25 @@
+# Dependencies are declared in pyproject.toml — this file exists for
+# `pip install -r requirements.txt` and mirrors the core set only.
+#
+#   pip install -e .            core framework
+#   pip install -e ".[so101]"   + the SO-101 (lerobot and its opencv, pyserial, placo)
+#   pip install -e ".[rig]"     + another real arm's cameras (opencv, pyserial); its SDK beside it
+#   pip install -e ".[measure]" + measuring objects from images (opencv, transformers)
+#   pip install -e ".[sb3]"     + running a policy trained with Stable-Baselines3
+#   pip install -e ".[dev]"     + pytest, ruff and mypy
+#
+# ── Core framework (no hardware required) ─────────────────────────────────────
+numpy>=1.24,<3.0
+pillow>=10.0
+requests>=2.28
+
+# ── Real SO-101 hardware ──────────────────────────────────────────────────────
+# Install lerobot in a dedicated environment first (opencv, pyserial, torch and
+# the rest come with it): https://github.com/huggingface/lerobot
+# Run this project with that environment's interpreter.
+#
+# Cartesian control — the move_ee_to-based skills, i.e. pick/place/move_above —
+# additionally needs:
+#     pip install placo
+#     python tools/so101/fetch_urdf.py
+# go_home(), the gripper and the cameras work without those; only IK needs them.

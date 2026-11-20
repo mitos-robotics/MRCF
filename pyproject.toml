@@ -1,0 +1,115 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mrcf"
+dynamic = ["version"]   # mrcf/__init__.py's __version__: the one place it is set
+description = "Modular Robotics Control Framework — control a robot in plain English with local models: planned and learned policies behind a safety layer, on real hardware"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.10"
+keywords = ["robotics", "llm", "vlm", "robot-arm", "manipulation", "so-101", "lerobot", "ik"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "numpy>=1.24",
+    "pillow>=10.0",
+    "requests>=2.28",
+]
+
+[project.optional-dependencies]
+# OpenCV stays below 5: the arms have only run on 4.x (motion_guard.py works on both).
+#
+# The SO-101 (mrcf/backends/so101): LeRobot's arm control and cameras, serial, placo
+# IK. LeRobot brings torch, so this is the SO-101's alone — another arm takes
+# `rig`. It brings its own OpenCV too (headless: no preview windows, so not
+# check_exposure.py --show), so this does not add a second one beside it.
+# Pinned to what the rig has run: LeRobot moves its modules between minor
+# releases (the driver is lerobot.robots.so_follower in 0.4), and
+# .github/workflows/so101.yml tests the newest release inside the pins weekly.
+so101 = [
+    "pyserial>=3.5",
+    "lerobot[feetech]>=0.4.4,<0.5",   # feetech: the servo bus SDK (scservo_sdk); plain lerobot has none
+    "placo>=0.9.6,<0.11",   # Cartesian IK/FK for the SO-101 (see tools/so101/fetch_urdf.py)
+]
+
+# Any other real arm whose backend owns its cameras (mrcf/backends/real_robot_env.py):
+# OpenCV capture and serial ports. The arm's own SDK goes in an extra of its
+# own beside it, as the UR5's does.
+rig = ["opencv-python>=4.8,<5", "pyserial>=3.5"]
+
+# The UR5 (mrcf/backends/ur5): ur_rtde over Ethernet. No macOS wheel: on a Mac it
+# builds from source (mrcf/backends/ur5/NOTES.md says how).
+ur5 = ["opencv-python>=4.8,<5", "ur_rtde>=1.6,<2"]
+
+# Measuring objects from camera images (mrcf/perception/): plane_geometry, surface_scan and
+# hand_eye need OpenCV; segment (the outlines) needs transformers, below 5.x
+# because lerobot pins huggingface_hub < 1.0, and torch. Downloads SAM2-tiny
+# (~150 MB) on first use.
+measure = ["opencv-python>=4.8,<5", "transformers>=4.56,<5", "torch", "torchvision"]   # SAM 2's image processor needs torchvision
+
+# Running a policy trained with Stable-Baselines3 (mrcf/policies/rl.py's SB3Model).
+# A LeRobot one (ACT, diffusion, ...) runs on the lerobot that `so101` brings, or `pip install lerobot`.
+sb3 = ["stable-baselines3>=2.4,<3"]
+
+# Everything (OpenCV is LeRobot's, as in `so101`)
+all = [
+    "stable-baselines3>=2.4,<3",
+    "pyserial>=3.5",
+    "lerobot[feetech]>=0.4.4,<0.5",   # feetech: the servo bus SDK (scservo_sdk); plain lerobot has none
+    "placo>=0.9.6,<0.11",
+    "transformers>=4.56,<5",
+    "torch",
+]
+
+# Running the tests, the linter and the type checker
+dev = ["pytest>=7", "ruff>=0.5", "mypy>=1.10"]
+
+[project.urls]
+Repository = "https://github.com/mitos-robotics/MRCF"
+Issues = "https://github.com/mitos-robotics/MRCF/issues"
+
+# ── Package discovery ───────────────────────────────────────────────────────────
+# One package, mrcf/, and nothing else: the scripts beside it (run.py, tools/,
+# deployments/) use it from the repository and are not installed, and a rig's
+# own files (rig/) never are.
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mrcf*"]
+
+[tool.setuptools.dynamic]
+version = { attr = "mrcf.__version__" }
+
+[tool.pytest.ini_options]
+# Every deployment's tests (deployments/<name>/tests/), not a list to keep up: toolbench's were left out of one.
+testpaths = ["tests", "deployments"]
+# Tests import from the repository root: mrcf, tools, and a deployment as a
+# package (deployments.chess.config).
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+# Errors and likely bugs, not style: the code's own comment-heavy style is
+# deliberate. Run with `ruff check .`.
+select = ["E9", "F", "PLE", "B007", "B904"]
+
+[tool.mypy]
+# The framework's types, checked in CI (tests.yml, "types"): run `mypy`.
+# Optional libraries (LeRobot, torch, placo, transformers, ...) need not be
+# installed or typed for it to run.
+files = ["mrcf"]
+python_version = "3.10"
+ignore_missing_imports = true
+
+# The scripts mrcf reaches for at run time (the tag tour in tools/, a task in
+# deployments/) are read for their types but not checked: they are not mrcf.
+[[tool.mypy.overrides]]
+module = ["tools.*", "deployments.*"]
+follow_imports = "silent"

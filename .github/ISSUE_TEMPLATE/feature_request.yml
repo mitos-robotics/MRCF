@@ -1,0 +1,35 @@
+name: Feature request
+description: Something MRCF should do but does not.
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What you are trying to do, and what gets in the way.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What you propose
+    validations:
+      required: true
+  - type: dropdown
+    id: tier
+    attributes:
+      label: Where it belongs
+      description: A change normally touches one tier (see "Repo structure" in CONTRIBUTING.md).
+      options:
+        - The framework (mrcf/)
+        - A backend (mrcf/backends/<robot>/)
+        - A deployment (deployments/<task>/)
+        - Tools (tools/)
+        - Docs
+        - Not sure
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives you considered

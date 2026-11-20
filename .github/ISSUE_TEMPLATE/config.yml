@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: The robot moved when it should not have, or you found a security hole
+    url: https://github.com/mitos-robotics/MRCF/security/policy
+    about: Report it privately, never as a public issue. SECURITY.md explains how.
+  - name: Documentation
+    url: https://github.com/mitos-robotics/MRCF#documentation
+    about: How to install, run, calibrate and extend MRCF.

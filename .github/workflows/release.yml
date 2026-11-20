@@ -1,0 +1,81 @@
+# A GitHub release from a version tag. Push vX.Y.Z (CONTRIBUTING.md,
+# "Releasing") and this checks the tag against the package's version, builds
+# the sdist and the wheel, and publishes a release with both attached and
+# CHANGELOG.md's section for that version as its notes. Nothing goes to PyPI.
+#
+# Python 3.15, the newest tests.yml runs: the version check reads
+# pyproject.toml with tomllib (3.11+); the build is pure Python.
+
+name: release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-26.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.15"
+
+      - name: The tag is the package's version
+        run: |
+          python - "$GITHUB_REF_NAME" <<'EOF'
+          import re, sys, tomllib
+          tag = sys.argv[1]
+          found = {}
+          with open("pyproject.toml", "rb") as f:
+              v = tomllib.load(f)["project"].get("version")      # absent if the version is dynamic
+          if v:
+              found["pyproject.toml"] = v
+          m = re.search(r'^__version__\s*=\s*["\']([^"\']+)["\']', open("mrcf/__init__.py", encoding="utf-8").read(), re.M)
+          if m:
+              found["mrcf/__init__.py"] = m.group(1)
+          if not found:
+              sys.exit("No version found in pyproject.toml or mrcf/__init__.py.")
+          wrong = {k: v for k, v in found.items() if f"v{v}" != tag}
+          if wrong:
+              sys.exit(f"Tag {tag} does not match the version in " + ", ".join(f"{k} ({v})" for k, v in wrong.items()))
+          print(f"{tag} matches " + ", ".join(found))
+          EOF
+
+      - name: Its notes, from CHANGELOG.md
+        run: |
+          python - "${GITHUB_REF_NAME#v}" CHANGELOG.md > notes.md <<'EOF'
+          import re, sys
+          version, path = sys.argv[1], sys.argv[2]
+          lines = open(path, encoding="utf-8").read().splitlines()
+          start = next((i for i, l in enumerate(lines) if l.startswith(f"## [{version}]")), None)
+          if start is None:
+              sys.exit(f"CHANGELOG.md has no '## [{version}]' section.")
+          if not re.search(r"\d{4}-\d{2}-\d{2}", lines[start]):
+              sys.exit(f"CHANGELOG.md's '{lines[start]}' has no date: set it (CONTRIBUTING.md, Releasing).")
+          body = []
+          for line in lines[start + 1:]:
+              if line.startswith("## ") or re.match(r"\[[^\]]+\]: ", line):   # the next version, or the links
+                  break
+              body.append(line)
+          notes = "\n".join(body).strip()
+          if not notes:
+              sys.exit(f"CHANGELOG.md's section for {version} is empty.")
+          print(notes)
+          EOF
+          cat notes.md
+
+      - run: pip install build
+      - run: python -m build
+
+      - name: The GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: >
+          gh release create "$GITHUB_REF_NAME" dist/*
+          --repo "$GITHUB_REPOSITORY" --verify-tag
+          --title "MRCF $GITHUB_REF_NAME" --notes-file notes.md

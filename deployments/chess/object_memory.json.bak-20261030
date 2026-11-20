@@ -1,0 +1,980 @@
+{
+ "saved": "2026-10-29T19:26:40",
+ "next": 120,
+ "tracks": [
+  {
+   "id": "obj-113",
+   "state": "missing",
+   "position": [
+    0.3557,
+    0.1201
+   ],
+   "place": "b7",
+   "label": null,
+   "label_source": null,
+   "label_votes": {},
+   "attributes": {
+    "colour": "white"
+   },
+   "attribute_seen": {
+    "colour": [
+     "white",
+     "white",
+     "white"
+    ]
+   },
+   "pinned": [],
+   "feet_mm": [
+    9.9848,
+    11.082,
+    10.1359,
+    10.0775,
+    12.5549,
+    9.993,
+    10.2571,
+    10.088,
+    10.2759,
+    9.4067,
+    10.0543,
+    9.7275
+   ],
+   "heights_mm": [],
+   "widths_mm": {},
+   "shapes": [],
+   "measured_foot_mm": null,
+   "refoot": false,
+   "appearances": [],
+   "extra": {
+    "lightness": 185.0,
+    "hue_deg": 4.0856
+   },
+   "confirmed": true,
+   "first_seen": "2026-10-28T12:43:53",
+   "last_seen": "2026-10-28T13:10:14",
+   "history": [
+    {
+     "time": "2026-10-28T12:43:53",
+     "event": "first seen",
+     "at": "b7"
+    },
+    {
+     "time": "2026-10-28T12:59:04",
+     "event": "not seen",
+     "last_at": "b7"
+    },
+    {
+     "time": "2026-10-28T12:59:33",
+     "event": "returned",
+     "by": "camera",
+     "from": "b7",
+     "to": "b7",
+     "uncertain": false
+    },
+    {
+     "time": "2026-10-28T16:08:50",
+     "event": "not seen",
+     "last_at": "b7"
+    }
+   ]
+  },
+  {
+   "id": "obj-114",
+   "state": "missing",
+   "position": [
+    0.271,
+    0.0219
+   ],
+   "place": "d4",
+   "label": null,
+   "label_source": null,
+   "label_votes": {},
+   "attributes": {
+    "colour": "black"
+   },
+   "attribute_seen": {
+    "colour": [
+     "black",
+     "black",
+     "black"
+    ]
+   },
+   "pinned": [],
+   "feet_mm": [
+    26.312,
+    26.2558,
+    26.0819,
+    26.195,
+    26.858,
+    26.5774,
+    25.7726,
+    27.006,
+    26.3631,
+    26.3068,
+    25.5997,
+    25.4236
+   ],
+   "heights_mm": [
+    68.9,
+    67.2
+   ],
+   "widths_mm": {
+    "4": 25.1,
+    "8": 20.3,
+    "12": 23.1,
+    "16": 22.5,
+    "20": 19.2,
+    "24": 19.5,
+    "28": 19.9,
+    "32": 21.2,
+    "36": 22.0,
+    "40": 22.1,
+    "44": 20.7,
+    "48": 21.9,
+    "52": 22.6,
+    "56": 22.7,
+    "60": 21.7,
+    "64": 18.2
+   },
+   "shapes": [
+    {
+     "height_mm": 68.9,
+     "widths_mm": {
+      "4": 25.1,
+      "8": 20.3,
+      "12": 23.1,
+      "16": 22.5,
+      "20": 19.2,
+      "24": 19.5,
+      "28": 19.9,
+      "32": 21.2,
+      "36": 22.0,
+      "40": 22.1,
+      "44": 20.7,
+      "48": 21.9,
+      "52": 22.6,
+      "56": 22.7,
+      "60": 21.7,
+      "64": 18.2
+     }
+    },
+    {
+     "height_mm": 67.2,
+     "widths_mm": {
+      "4": 29.5,
+      "8": 28.4,
+      "12": 27.7,
+      "16": 26.1,
+      "20": 24.7,
+      "24": 22.5,
+      "28": 21.6,
+      "32": 22.4,
+      "36": 22.8,
+      "40": 21.9,
+      "44": 20.5,
+      "48": 22.0,
+      "52": 22.9,
+      "56": 21.6,
+      "60": 19.4,
+      "64": 13.9
+     }
+    }
+   ],
+   "measured_foot_mm": 26.3631,
+   "refoot": false,
+   "appearances": [],
+   "extra": {
+    "lightness": 171.0,
+    "hue_deg": -13.3925
+   },
+   "confirmed": true,
+   "first_seen": "2026-10-28T12:43:53",
+   "last_seen": "2026-10-28T13:10:14",
+   "history": [
+    {
+     "time": "2026-10-28T12:43:53",
+     "event": "first seen",
+     "at": "d4"
+    },
+    {
+     "time": "2026-10-28T12:44:36",
+     "event": "measured",
+     "height_mm": 68.9,
+     "foot_mm": 23.6
+    },
+    {
+     "time": "2026-10-28T12:44:36",
+     "event": "picked",
+     "by": "arm",
+     "from": "d4"
+    },
+    {
+     "time": "2026-10-28T12:44:41",
+     "event": "placed",
+     "by": "arm",
+     "from": "d4",
+     "to": "c3"
+    },
+    {
+     "time": "2026-10-28T12:45:59",
+     "event": "measured",
+     "height_mm": 67.2,
+     "foot_mm": 27.8
+    },
+    {
+     "time": "2026-10-28T12:45:59",
+     "event": "picked",
+     "by": "arm",
+     "from": "c3"
+    },
+    {
+     "time": "2026-10-28T12:46:05",
+     "event": "placed",
+     "by": "arm",
+     "from": "c3",
+     "to": "e3"
+    },
+    {
+     "time": "2026-10-28T12:47:03",
+     "event": "picked",
+     "by": "arm",
+     "from": "e3"
+    },
+    {
+     "time": "2026-10-28T12:47:08",
+     "event": "placed",
+     "by": "arm",
+     "from": "e3",
+     "to": "e4"
+    },
+    {
+     "time": "2026-10-28T12:48:05",
+     "event": "picked",
+     "by": "arm",
+     "from": "e4"
+    },
+    {
+     "time": "2026-10-28T12:48:13",
+     "event": "placed",
+     "by": "arm",
+     "from": "e4",
+     "to": "c4"
+    },
+    {
+     "time": "2026-10-28T12:49:12",
+     "event": "picked",
+     "by": "arm",
+     "from": "c4"
+    },
+    {
+     "time": "2026-10-28T12:49:21",
+     "event": "placed",
+     "by": "arm",
+     "from": "c4",
+     "to": "d5"
+    },
+    {
+     "time": "2026-10-28T12:57:32",
+     "event": "picked",
+     "by": "arm",
+     "from": "d5"
+    },
+    {
+     "time": "2026-10-28T12:57:40",
+     "event": "placed",
+     "by": "arm",
+     "from": "d5",
+     "to": "e4"
+    },
+    {
+     "time": "2026-10-28T12:58:47",
+     "event": "picked",
+     "by": "arm",
+     "from": "e4"
+    },
+    {
+     "time": "2026-10-28T12:58:57",
+     "event": "placed",
+     "by": "arm",
+     "from": "e4",
+     "to": "d5"
+    },
+    {
+     "time": "2026-10-28T12:59:51",
+     "event": "picked",
+     "by": "arm",
+     "from": "d5"
+    },
+    {
+     "time": "2026-10-28T12:59:59",
+     "event": "placed",
+     "by": "arm",
+     "from": "d5",
+     "to": "c5"
+    },
+    {
+     "time": "2026-10-28T13:03:59",
+     "event": "picked",
+     "by": "arm",
+     "from": "c5"
+    },
+    {
+     "time": "2026-10-28T13:04:07",
+     "event": "placed",
+     "by": "arm",
+     "from": "c5",
+     "to": "d4"
+    },
+    {
+     "time": "2026-10-28T13:04:58",
+     "event": "picked",
+     "by": "arm",
+     "from": "d4"
+    },
+    {
+     "time": "2026-10-28T13:05:09",
+     "event": "placed",
+     "by": "arm",
+     "from": "d4",
+     "to": "e5"
+    },
+    {
+     "time": "2026-10-28T13:06:54",
+     "event": "moved",
+     "by": "camera",
+     "from": "e5",
+     "to": "d4",
+     "uncertain": false
+    },
+    {
+     "time": "2026-10-28T16:08:50",
+     "event": "not seen",
+     "last_at": "d4"
+    }
+   ]
+  },
+  {
+   "id": "obj-115",
+   "state": "present",
+   "position": [
+    0.259,
+    -0.0044
+   ],
+   "place": "e4",
+   "label": "pawn",
+   "label_source": "vlm",
+   "label_votes": {
+    "pawn": 1
+   },
+   "attributes": {
+    "colour": "white"
+   },
+   "attribute_seen": {
+    "colour": [
+     "black",
+     "white",
+     "white"
+    ]
+   },
+   "pinned": [],
+   "feet_mm": [
+    25.5336,
+    16.2437,
+    24.9319,
+    25.7502,
+    29.3101,
+    25.1873,
+    23.8152,
+    22.9542,
+    22.9839,
+    22.6779,
+    20.3949,
+    20.1621
+   ],
+   "heights_mm": [
+    51.9,
+    52.6
+   ],
+   "widths_mm": {
+    "4": 26.0,
+    "8": 25.2,
+    "12": 23.8,
+    "16": 22.0,
+    "20": 19.6,
+    "24": 19.0,
+    "28": 18.9,
+    "32": 18.7,
+    "36": 19.5,
+    "40": 18.7,
+    "44": 17.8,
+    "48": 13.8
+   },
+   "shapes": [
+    {
+     "height_mm": 51.9,
+     "widths_mm": {
+      "4": 26.0,
+      "8": 25.2,
+      "12": 23.8,
+      "16": 22.0,
+      "20": 19.6,
+      "24": 19.0,
+      "28": 18.9,
+      "32": 18.7,
+      "36": 19.5,
+      "40": 18.7,
+      "44": 17.8,
+      "48": 13.8
+     }
+    },
+    {
+     "height_mm": 52.6,
+     "widths_mm": {
+      "4": 25.5,
+      "8": 24.8,
+      "12": 23.5,
+      "16": 21.6,
+      "20": 19.5,
+      "24": 19.3,
+      "28": 20.0,
+      "32": 19.8,
+      "36": 20.0,
+      "40": 19.0,
+      "44": 17.4,
+      "48": 14.3
+     }
+    }
+   ],
+   "measured_foot_mm": 22.9542,
+   "refoot": false,
+   "appearances": [],
+   "extra": {
+    "lightness": 172.0,
+    "hue_deg": 25.641
+   },
+   "confirmed": true,
+   "first_seen": "2026-10-28T12:43:53",
+   "last_seen": "2026-10-29T19:26:40",
+   "history": [
+    {
+     "time": "2026-10-28T12:43:53",
+     "event": "first seen",
+     "at": "e5"
+    },
+    {
+     "time": "2026-10-28T12:45:19",
+     "event": "measured",
+     "height_mm": 53.6,
+     "foot_mm": 24.2
+    },
+    {
+     "time": "2026-10-28T12:45:19",
+     "event": "picked",
+     "by": "arm",
+     "from": "e5"
+    },
+    {
+     "time": "2026-10-28T12:45:25",
+     "event": "placed",
+     "by": "arm",
+     "from": "e5",
+     "to": "d4"
+    },
+    {
+     "time": "2026-10-28T12:46:30",
+     "event": "measured",
+     "height_mm": 52.6,
+     "foot_mm": 23.8
+    },
+    {
+     "time": "2026-10-28T12:46:30",
+     "event": "picked",
+     "by": "arm",
+     "from": "d4"
+    },
+    {
+     "time": "2026-10-28T12:46:40",
+     "event": "placed",
+     "by": "arm",
+     "from": "d4",
+     "to": "c5"
+    },
+    {
+     "time": "2026-10-28T12:47:32",
+     "event": "picked",
+     "by": "arm",
+     "from": "c5"
+    },
+    {
+     "time": "2026-10-28T12:47:39",
+     "event": "placed",
+     "by": "arm",
+     "from": "c5",
+     "to": "d3"
+    },
+    {
+     "time": "2026-10-28T12:57:04",
+     "event": "picked",
+     "by": "arm",
+     "from": "d3"
+    },
+    {
+     "time": "2026-10-28T12:57:11",
+     "event": "placed",
+     "by": "arm",
+     "from": "d3",
+     "to": "c4"
+    },
+    {
+     "time": "2026-10-28T12:58:02",
+     "event": "picked",
+     "by": "arm",
+     "from": "c4"
+    },
+    {
+     "time": "2026-10-28T12:58:10",
+     "event": "placed",
+     "by": "arm",
+     "from": "c4",
+     "to": "d3"
+    },
+    {
+     "time": "2026-10-28T12:59:17",
+     "event": "picked",
+     "by": "arm",
+     "from": "d3"
+    },
+    {
+     "time": "2026-10-28T12:59:22",
+     "event": "placed",
+     "by": "arm",
+     "from": "d3",
+     "to": "e3"
+    },
+    {
+     "time": "2026-10-28T13:04:29",
+     "event": "picked",
+     "by": "arm",
+     "from": "e3"
+    },
+    {
+     "time": "2026-10-28T13:04:35",
+     "event": "placed",
+     "by": "arm",
+     "from": "e3",
+     "to": "c3"
+    },
+    {
+     "time": "2026-10-28T13:05:36",
+     "event": "measured",
+     "height_mm": 51.9,
+     "foot_mm": 24.5
+    },
+    {
+     "time": "2026-10-28T13:05:36",
+     "event": "picked",
+     "by": "arm",
+     "from": "c3"
+    },
+    {
+     "time": "2026-10-28T13:05:41",
+     "event": "placed",
+     "by": "arm",
+     "from": "c3",
+     "to": "d3"
+    },
+    {
+     "time": "2026-10-28T13:06:37",
+     "event": "measured",
+     "height_mm": 52.6,
+     "foot_mm": 23.9
+    },
+    {
+     "time": "2026-10-28T13:06:37",
+     "event": "picked",
+     "by": "arm",
+     "from": "d3"
+    },
+    {
+     "time": "2026-10-28T13:06:45",
+     "event": "placed",
+     "by": "arm",
+     "from": "d3",
+     "to": "e4"
+    },
+    {
+     "time": "2026-10-28T16:08:50",
+     "event": "not seen",
+     "last_at": "e4"
+    },
+    {
+     "time": "2026-10-29T17:04:18",
+     "event": "returned",
+     "by": "camera",
+     "from": "e4",
+     "to": "e4",
+     "uncertain": false
+    }
+   ]
+  },
+  {
+   "id": "obj-116",
+   "state": "missing",
+   "position": [
+    0.3602,
+    0.1271
+   ],
+   "place": "b7",
+   "label": null,
+   "label_source": null,
+   "label_votes": {},
+   "attributes": {
+    "colour": "white"
+   },
+   "attribute_seen": {
+    "colour": [
+     "white"
+    ]
+   },
+   "pinned": [],
+   "feet_mm": [
+    31.0969
+   ],
+   "heights_mm": [],
+   "widths_mm": {},
+   "shapes": [],
+   "measured_foot_mm": null,
+   "refoot": false,
+   "appearances": [],
+   "extra": {
+    "lightness": 220.0,
+    "hue_deg": 5.1944
+   },
+   "confirmed": true,
+   "first_seen": "2026-10-28T12:59:04",
+   "last_seen": "2026-10-28T12:59:04",
+   "history": [
+    {
+     "time": "2026-10-28T12:59:04",
+     "event": "first seen",
+     "at": "b7"
+    },
+    {
+     "time": "2026-10-28T12:59:33",
+     "event": "not seen",
+     "last_at": "b7"
+    }
+   ]
+  },
+  {
+   "id": "obj-117",
+   "state": "missing",
+   "position": [
+    0.2199,
+    -0.0017
+   ],
+   "place": null,
+   "label": null,
+   "label_source": null,
+   "label_votes": {},
+   "attributes": {
+    "colour": "white"
+   },
+   "attribute_seen": {
+    "colour": [
+     "white",
+     "white",
+     "white"
+    ]
+   },
+   "pinned": [],
+   "feet_mm": [
+    20.2369,
+    16.7839,
+    16.6705,
+    17.1581
+   ],
+   "heights_mm": [],
+   "widths_mm": {},
+   "shapes": [],
+   "measured_foot_mm": null,
+   "refoot": false,
+   "appearances": [],
+   "extra": {
+    "lightness": 223.0,
+    "hue_deg": -23.1986
+   },
+   "confirmed": true,
+   "first_seen": "2026-10-28T16:08:50",
+   "last_seen": "2026-10-28T16:21:33",
+   "history": [
+    {
+     "time": "2026-10-28T16:08:50",
+     "event": "first seen",
+     "at": "e3"
+    },
+    {
+     "time": "2026-10-28T16:09:21",
+     "event": "moved",
+     "by": "camera",
+     "from": "e3",
+     "to": "e3",
+     "uncertain": false
+    },
+    {
+     "time": "2026-10-28T16:21:33",
+     "event": "moved",
+     "by": "arm",
+     "how": "stand_up",
+     "from": "e3"
+    },
+    {
+     "time": "2026-10-28T16:21:40",
+     "event": "not seen",
+     "last_at": null
+    }
+   ]
+  },
+  {
+   "id": "obj-118",
+   "state": "missing",
+   "position": [
+    0.303,
+    -0.0019
+   ],
+   "place": "e5",
+   "label": "pawn",
+   "label_source": "vlm",
+   "label_votes": {
+    "pawn": 2
+   },
+   "attributes": {
+    "colour": "white"
+   },
+   "attribute_seen": {
+    "colour": [
+     "white",
+     "white",
+     "white"
+    ]
+   },
+   "pinned": [],
+   "feet_mm": [
+    21.4497,
+    21.3766,
+    21.2912,
+    21.9158,
+    20.8787,
+    20.9173
+   ],
+   "heights_mm": [
+    42.1,
+    42.3
+   ],
+   "widths_mm": {
+    "4": 21.8,
+    "8": 20.7,
+    "12": 19.7,
+    "16": 17.7,
+    "20": 16.1,
+    "24": 15.6,
+    "28": 15.3,
+    "32": 14.4,
+    "36": 13.0,
+    "40": 9.0
+   },
+   "shapes": [
+    {
+     "height_mm": 42.1,
+     "widths_mm": {
+      "4": 21.5,
+      "8": 20.9,
+      "12": 20.0,
+      "16": 17.9,
+      "20": 15.9,
+      "24": 15.5,
+      "28": 15.1,
+      "32": 14.3,
+      "36": 12.1
+     }
+    },
+    {
+     "height_mm": 42.3,
+     "widths_mm": {
+      "4": 21.8,
+      "8": 20.7,
+      "12": 19.7,
+      "16": 17.7,
+      "20": 16.1,
+      "24": 15.6,
+      "28": 15.3,
+      "32": 14.4,
+      "36": 13.0,
+      "40": 9.0
+     }
+    }
+   ],
+   "measured_foot_mm": 20.8787,
+   "refoot": false,
+   "appearances": [],
+   "extra": {
+    "lightness": 236.0,
+    "hue_deg": 0.0
+   },
+   "confirmed": true,
+   "first_seen": "2026-10-28T16:21:40",
+   "last_seen": "2026-10-29T15:16:48",
+   "history": [
+    {
+     "time": "2026-10-28T16:21:40",
+     "event": "first seen",
+     "at": "d3"
+    },
+    {
+     "time": "2026-10-29T11:56:32",
+     "event": "measured",
+     "height_mm": 42.1,
+     "foot_mm": 20.5
+    },
+    {
+     "time": "2026-10-29T11:56:32",
+     "event": "picked",
+     "by": "arm",
+     "from": "d3"
+    },
+    {
+     "time": "2026-10-29T11:57:47",
+     "event": "lost",
+     "why": "it left the jaws on the way to d3"
+    },
+    {
+     "time": "2026-10-29T12:18:45",
+     "event": "returned",
+     "by": "camera",
+     "from": "d3",
+     "to": "d4",
+     "uncertain": false
+    },
+    {
+     "time": "2026-10-29T12:19:16",
+     "event": "measured",
+     "height_mm": 42.3,
+     "foot_mm": 20.6
+    },
+    {
+     "time": "2026-10-29T12:19:16",
+     "event": "picked",
+     "by": "arm",
+     "from": "d4"
+    },
+    {
+     "time": "2026-10-29T12:23:06",
+     "event": "placed",
+     "by": "arm",
+     "from": "d4",
+     "to": "e4"
+    },
+    {
+     "time": "2026-10-29T14:59:02",
+     "event": "picked",
+     "by": "arm",
+     "from": "e4"
+    },
+    {
+     "time": "2026-10-29T15:04:36",
+     "event": "placed",
+     "by": "arm",
+     "from": "e4",
+     "to": "e4"
+    },
+    {
+     "time": "2026-10-29T15:08:34",
+     "event": "picked",
+     "by": "arm",
+     "from": "e4"
+    },
+    {
+     "time": "2026-10-29T15:08:39",
+     "event": "placed",
+     "by": "arm",
+     "from": "e4",
+     "to": "e5"
+    },
+    {
+     "time": "2026-10-29T17:04:18",
+     "event": "not seen",
+     "last_at": "e5"
+    }
+   ]
+  },
+  {
+   "id": "obj-119",
+   "state": "missing",
+   "position": [
+    0.2382,
+    0.1511
+   ],
+   "place": "a4",
+   "label": "rook",
+   "label_source": "vlm",
+   "label_votes": {
+    "pawn": 1,
+    "rook": 3
+   },
+   "attributes": {
+    "colour": "white"
+   },
+   "attribute_seen": {
+    "colour": [
+     "white",
+     "white",
+     "black"
+    ]
+   },
+   "pinned": [],
+   "feet_mm": [],
+   "heights_mm": [],
+   "widths_mm": {},
+   "shapes": [],
+   "measured_foot_mm": null,
+   "refoot": false,
+   "appearances": [],
+   "extra": {},
+   "confirmed": false,
+   "first_seen": "2026-10-29T11:56:02",
+   "last_seen": "2026-10-29T15:16:48",
+   "history": [
+    {
+     "time": "2026-10-29T11:56:02",
+     "event": "first seen",
+     "at": "d2"
+    },
+    {
+     "time": "2026-10-29T11:57:32",
+     "event": "not seen",
+     "last_at": "d2"
+    },
+    {
+     "time": "2026-10-29T14:58:33",
+     "event": "returned",
+     "by": "camera",
+     "from": "d2",
+     "to": "a5",
+     "uncertain": false
+    },
+    {
+     "time": "2026-10-29T15:09:53",
+     "event": "moved",
+     "by": "camera",
+     "from": "a5",
+     "to": "a4",
+     "uncertain": false
+    },
+    {
+     "time": "2026-10-29T17:04:18",
+     "event": "not seen",
+     "last_at": "a4"
+    }
+   ]
+  }
+ ]
+}

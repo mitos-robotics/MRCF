@@ -1,0 +1,76 @@
+# The offline suite, no hardware (twice over), and the type check.
+#
+#   core  what `pip install -e ".[dev]"` alone gives a contributor — tests that
+#         need OpenCV, Stable-Baselines3 or LeRobot skip themselves, and nothing
+#         fails — on Linux, Windows and macOS
+#   full  OpenCV, SAM2's transformers and Stable-Baselines3 (CPU torch), so the
+#         perception, motion guard and learned-policy runner tests run
+#   types mypy over mrcf/ (pyproject.toml's [tool.mypy]), with OpenCV for its
+#         stubs and the heavy optional libraries left out
+#
+# LeRobot and placo are left out of both (heavy, and SO-101 only); the SO-101
+# tests that need them skip here and run in so101.yml.
+#
+# The newest of everything, pinned so a runner never changes under a run:
+# Python 3.15, Ubuntu 26.04, macOS 26, Windows Server 2025 — and Python 3.10,
+# the oldest requires-python allows (the SO-101 rig's LeRobot env runs it).
+
+name: tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  core:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-26.04]
+        python: ["3.10", "3.15"]
+        include:
+          - {os: windows-2025, python: "3.15"}
+          - {os: macos-26, python: "3.15"}
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+          cache: pip
+      - run: pip install -e ".[dev]"
+      - run: ruff check .
+      - run: pytest -q -rs
+
+  full:
+    runs-on: ubuntu-26.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.15"
+          cache: pip
+      - name: OpenCV's system libraries
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends libgl1 libglib2.0-0t64
+      - name: CPU torch (Stable-Baselines3 would otherwise pull the CUDA build)
+        run: pip install torch --index-url https://download.pytorch.org/whl/cpu
+      - run: pip install -e ".[dev,sb3,measure]"
+      - run: pytest -q -rs
+        env:
+          MRCF_BASELINES_REQUIRE: ur5,_template     # their recorded settings, env and plans (OpenCV here)
+
+  types:
+    runs-on: ubuntu-26.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.15"
+          cache: pip
+      - run: pip install -e ".[dev,rig]"
+      - run: mypy
